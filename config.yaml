@@ -1,0 +1,24 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+ignore-resolve-fail: true
+mode: Rule
+log-level: silent
+dns:
+  enable: true
+  nameserver:
+    - 8.8.8.8
+    - 9.9.9.9
+    - https://dns.alidns.com/dns-query
+    - https://doh.opendns.com/dns-query
+  fallback:
+    - 8.8.8.8
+    - 9.9.9.9
+    - https://dns.google/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://doh.opendns.com/dns-query
+    - https://dns.cloudflare.com/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
