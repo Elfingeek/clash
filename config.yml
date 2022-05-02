@@ -9,15 +9,15 @@ dns:
   nameserver:
     - 1.1.1.2
     - 9.9.9.9
-    - https://dns.google/dns-query
     - https://dns.quad9.net/dns-query
     - https://dns.cloudflare.com/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback:
     - 1.1.1.2
     - 9.9.9.9
-    - https://dns.google/dns-query
     - https://dns.quad9.net/dns-query
     - https://dns.cloudflare.com/dns-query
+    - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
