@@ -8,16 +8,15 @@ dns:
   enable: true
   nameserver:
     - 1.1.1.2
-    - 9.9.9.9
-    - https://dns.quad9.net/dns-query
+    - 8.8.8.8
+    - https://doh.opendns.com/dns-query
     - https://dns.cloudflare.com/dns-query
-    - https://cloudflare-dns.com/dns-query
   fallback:
     - 1.1.1.2
-    - 9.9.9.9
-    - https://dns.quad9.net/dns-query
+    - 8.8.8.8
+    - https://dns.google/dns-query
+    - https://doh.opendns.com/dns-query
     - https://dns.cloudflare.com/dns-query
-    - https://cloudflare-dns.com/dns-query
   fallback-filter:
     geoip: true
     ipcidr:
